@@ -1,0 +1,28 @@
+body {
+    margin: 100px auto;
+}
+  
+.parent {
+width: 500px;
+border: 1px solid red;
+margin: auto;
+text-align: center;
+}
+
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(89, 15, 207);
+    position: relative;
+    top: 30px;
+}
+.two{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.three{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
