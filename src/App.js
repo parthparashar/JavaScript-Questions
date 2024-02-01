@@ -8,6 +8,7 @@ import EventLoop from './Component/EventLoop';
 import Callback from './Component/Callback';
 import Lifecycle from './Component/LifecycleReact/Mounting/Lifecycle';
 import DidMount from './Component/LifecycleReact/DidMount';
+import UseReducer from './Component/UseReducer';
 function App() {
   return (
     <div>
@@ -19,7 +20,8 @@ function App() {
       {/* <EventLoop /> */}
       {/* <Callback /> */}
       {/* <Lifecycle /> */}
-      <DidMount/>
+      {/* <DidMount/> */}
+      <UseReducer />
     </div>
   );
 }
