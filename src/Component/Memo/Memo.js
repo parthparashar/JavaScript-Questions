@@ -57,17 +57,7 @@ import Child from "./Child";
 function Memo() {
   const [counter1, setCounter1] = useState(0);
   const [counter2, setCounter2] = useState(0);
-  const isEven = useMemo(() => {
-    console.log("......................");
-    let i=0;
-    while(i<500000000)
-    {
-      i++;
-    }
-    return counter1%2===0;
-  },[counter1])
-
-  // const isEven = () => {
+  // const isEven = useMemo(() => {
   //   console.log("......................");
   //   let i=0;
   //   while(i<500000000)
@@ -75,7 +65,17 @@ function Memo() {
   //     i++;
   //   }
   //   return counter1%2===0;
-  // }
+  // },[counter1])
+
+  const isEven = () => {
+    console.log("......................");
+    let i=0;
+    while(i<500000000)
+    {
+      i++;
+    }
+    return counter1%2===0;
+  }
   return(
     <>
       <button onClick={() => setCounter1(counter1+1)}>Counter one - {counter1}</button>
